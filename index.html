@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CarCOOL</title>
+</head>
+
+<body style="margin: 4em 1em 4em 1em;">
+
+    <!-- HOME Bienvenida -->
+    <header>
+        <div class="fixed-top">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white h3">Bienvenidos a la Nave del NO Olvido</h4>
+                    <span class="text-muted">A traves de este medio conseguiras la nave donde seras siempre recuerdo y
+                        nunca inrecuerdo.</span>
+                    <h4 class="text-white h4 d-flex flex-row-reverse">Quienes Somos</h4>
+                    <span class="text-muted d-flex flex-row-reverse">Una startup de primer mundo, dedicado a entregar tu
+                        sueño convertido en ruedas, formado de los coaches de vida("developers") @emmaGonzalez y
+                        @albertoFlores.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark" id="navbar">
+                <h1 class="text-white h2 d-none d-md-block d-lg-block d-xl-block">La Nave del NO Olvido</h1>
+                <img src="./Assets/Car-Logo-f-wh.svg" height="40" alt="" id="carLogo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FORMULARIO Cotizador -->
+    <!-- PIDE
+        - Marca(Chevrolet, Ford  o Nissan)
+        - Modelo(2019  y 2020)
+        - Presupuesto(15,000 - 150,000)
+        - Caja de Velocidades: [Manual O Automatico]
+            -->
+    <div class="form">
+
+        <!-- <div class="d-md-none" id="inputLine1"> -->
+        <div class="" id="inputLine1">
+
+            <div class="input-group m-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Modelo</span>
+                </div>
+                <input type="number" min="2019" max="2020" step="1" class="form-control" placeholder="2019 o 2020"
+                    aria-label="Modelo" aria-describedby="basic-addon1" id="inputModelo" required>
+            </div>
+    
+            <div class="input-group m-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Marca</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Chevrolet, Ford o Nissan" aria-label="Marca"
+                    aria-describedby="basic-addon1" id="inputMarca" required>
+            </div>
+
+        </div>
+
+        <!-- Responsive -->
+        <!-- <div class="d-flex flex-row" id="inputLine1">
+
+            <div class="input-group m-1 d-none d-sm-block">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Modelo B</span>
+                </div>
+                <input type="number" min="2019" max="2020" step="1" class="form-control" placeholder="2019 o 2020"
+                    aria-label="Modelo" aria-describedby="basic-addon1" id="inputModelo">
+            </div>
+    
+            <div class="input-group m-1 d-none d-sm-block">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Marca</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Chevrolet, Ford o Nissan" aria-label="Marca"
+                    aria-describedby="basic-addon1" id="inputMarca">
+            </div>
+
+        </div> -->
+        
+        <div class="" id="inputLine2">
+
+            <div class="input-group m-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Transmision</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Manual o Auto" aria-label="Modelo"
+                    aria-describedby="basic-addon1" id="inputTransmision" required>
+            </div>
+    
+            <div class="input-group m-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Presupuesto</span>
+                </div>
+                <input type="number" min="0.00" max="150000.00" step="1000.00" class="form-control"
+                    placeholder="De $ 1 hasta $ 150,000" aria-label="Presupuesto" aria-describedby="basic-addon1"
+                    id="inputPresupuesto" required>
+            </div>
+
+        </div>
+
+        <!-- Responsive -->
+        <!-- <div class="d-flex flex-row" id="inputLine2">
+
+            <div class="input-group m-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Transmision</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Manual o Auto" aria-label="Modelo"
+                    aria-describedby="basic-addon1" id="inputTransmision">
+            </div>
+    
+            <div class="input-group m-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text text-white bg-dark" style="font-weight: bold;" id="basic-addon1">Presupuesto</span>
+                </div>
+                <input type="number" min="0.00" max="150000.00" step="1000.00" class="form-control"
+                    placeholder="De $ 1 hasta $ 150,000" aria-label="Presupuesto" aria-describedby="basic-addon1"
+                    id="inputPresupuesto">
+            </div>
+
+        </div> -->
+
+        <div class="m-1" id="botones">
+
+            <button class="btn btn-success align-self-center" type="submit" id="btnBuscar">Buscar</button>
+            
+            <button class="btn btn-warning align-self-center" type="submit" id="btnTodos">Todos</button>
+        
+        </div>
+
+    </div>
+
+    <!-- RESULTADOS DE LA BUSQUEDA -->
+
+    <!-- Aqui empezamos los rows para dibujar los cards -->
+    <!-- <div class="container m-1">
+        <div class="row fix-card" id="card-container">
+            <div class="card" style="width: 15rem;" id="carCard">
+                <img src="https://i.pinimg.com/236x/85/c4/94/85c494c7305846ba3be667ea25f88650.jpg" class="card-img-top"
+                    alt="...">
+                <ul class="list-group list-group-flush">
+                    <span class="font-weight-bold">Marca:</span>
+                    <li class="list-group-item">autos[i].make</li>
+                    <span class="font-weight-bold">Modelo:</span>
+                    <li class="list-group-item">autos[i].model</li>
+                    <span class="font-weight-bold">Colores:</span>
+                    <li class="list-group-item">autos[i].colors</li>
+                    <span class="font-weight-bold">Precio:</span>
+                    <li class="list-group-item">autos[i].price</li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+        <div class="row fix-card d-flex justify-content-center m-2" id="card-container">
+            
+            <div class="card text-white bg-danger m-1 p-1" id="carCard" style="width:12rem;">
+                <img class="card-img-top" height="150" src="./Assets/nissan-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-primary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/ford-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-secondary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/chevrolet-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+            
+            
+            <div class="card text-white bg-danger m-1 p-1" id="carCard" style="width:12rem;">
+                <img class="card-img-top" height="150" src="./Assets/nissan-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-primary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/ford-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-secondary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/chevrolet-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+                        
+            <div class="card text-white bg-danger m-1 p-1" id="carCard" style="width:12rem;">
+                <img class="card-img-top" height="150" src="./Assets/nissan-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-primary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/ford-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-secondary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/chevrolet-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+                        
+            <div class="card text-white bg-danger m-1 p-1" id="carCard" style="width:12rem;">
+                <img class="card-img-top" height="150" src="./Assets/nissan-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-primary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/ford-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+
+            <div class="card text-white bg-secondary m-1 p-1" id="carCard" style="width: 12rem;">
+                <img class="card-img-top" height="150" src="./Assets/chevrolet-cartoon.svg">
+                <h5 class="card-name" style="text-align:center;font-size:16px;font-weight: bold;" >370Z</h5>
+                <div class="card-make" style="font-size:14px;">Marca: Nissan</div>
+                <div class="card-year" style="font-size:14px;">Modelo: 2019</div>
+                <div class="card-color" style="font-size:14px;">Colores: white</div>
+                <div class="card-price" style="font-size:14px;">Precio: $117969</div>
+            </div>
+                        
+        </div>
+            
+    <!-- FOOTER -->
+    <footer>
+        <div class="fixed-bottom bg-dark p-1">
+            <h4 class="text-white h5 p-1">Espera a nuestro proximo exito en el Fuck Up Nights mas cercano a tu
+                localidad.</h4>
+        </div>
+    </footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="modal-form-error">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Algún campo es incorrecto o está vacío!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="bd.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
